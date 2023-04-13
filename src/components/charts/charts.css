@@ -1,0 +1,96 @@
+.charts{
+  display: flex;
+  justify-content: space-evenly;
+  flex: 4;
+}
+.charts .featureditem {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex: 2 ;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+  height: 250px;
+  margin: 15px 15px 0 15px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #c6002f;
+}
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #6b00c6;
+}
+.featureditem .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+}
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #333;
+  font-weight: bold;
+}
+.featureditem .top .title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.featureditem .bottom {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.featureditem .bottom .featuredChart {
+  width: 120px;
+  height: 120px;
+}
+.featureditem .bottom .colors {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.featureditem .bottom .colors p {
+  position: relative;
+}
+.featureditem .bottom .colors .firstcolor::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #6b00c6;
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 5px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.featureditem .bottom .colors .secondcolor::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #c6002f;
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 5px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+path.recharts-curve.recharts-area-curve {
+  stroke: #6b00c6;
+}
+path.recharts-curve.recharts-area-area {
+  fill: #6b00c6;
+}
