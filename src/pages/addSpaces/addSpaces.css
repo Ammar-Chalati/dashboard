@@ -1,0 +1,81 @@
+.addSpaces {
+	background: #fff;
+	width: 85%;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.addSpaces p {
+	margin: 100px 0 40px 100px;
+	font-size: 34px;
+	font-weight: bold;
+	color: #6b00c6;
+}
+.addSpaces .form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 75px auto;
+	width: 50%;
+}
+.addSpaces .form input {
+	background: #e6e6e6;
+	border: none;
+	width: 100%;
+	padding: 20px 0;
+}
+.addSpaces .form input::placeholder {
+	background: #e6e6e6;
+}
+.addSpaces .form input:focus-visible {
+	border: none;
+	outline: none;
+}
+.addSpaces .form div {
+	width: 100%;
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+.addSpaces .form > div {
+	margin-bottom: 20px;
+}
+.addSpaces .form .button {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.addSpaces .form .button div {
+	width: 35%;
+	height: 75px;
+	margin: 50px 0 20vh 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.addSpaces .form .button div:nth-child(1) {
+	background: #6b00c6;
+}
+.addSpaces .form .button div:nth-child(2) {
+	background: #cd353b;
+}
+.addSpaces .form .button div p {
+	margin: 0;
+	color: #fff;
+	font-size: 24px;
+}
+.addSpaces .form div > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333;
+	background: #e6e6e6;
+	width: 50px;
+	height: 56px;
+}

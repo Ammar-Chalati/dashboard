@@ -1,0 +1,43 @@
+.timeList {
+	display: flex;
+}
+.timeList .list {
+	width: 100%;
+	margin-bottom: 50px;
+}
+.timeList .list table {
+	overflow: hidden;
+	width: calc(100% - 35px);
+	background: #fff;
+	margin: 15px 15px 50px 15px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-spacing: 0;
+	letter-spacing: 1px;
+}
+.timeList .list table thead {
+	background: #6b00c6;
+	color: #fff;
+}
+.timeList .list table th {
+	padding: 10px 50px 10px 0px;
+	font-size: 24px;
+}
+.timeList .list table td {
+	padding: 20px 10px;
+	font-size: 18px;
+}
+.timeList .list table thead td {
+	padding: 20px 0px 20px 10px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.timeList .list table tbody td div {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}

@@ -17,6 +17,16 @@ import HelpIcon from '@mui/icons-material/Help';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 import './navbar.css';
+const menu = document.querySelectorAll(".navbar a .menuItem ");
+
+menu.forEach(function (ele) {
+  ele.onclick = function() {
+    menu.forEach(function (ele) {
+      ele.classList.remove("active");
+    })
+    this.classList.add("active");
+  };
+})
 
 const Navbar = () => {
   return (
@@ -24,67 +34,127 @@ const Navbar = () => {
       <div className="logo">
         <h1>logo</h1>
       </div>
-      <div>
-        <HomeIcon />
-        <Link to='/'>Dashboard</Link>
-      </div>
-      <div>
-        <CalendarTodayIcon />
-        <Link to='/'>Reservation Managment</Link>
-      </div>
-      <div>
-        <PersonIcon />
-        <Link to='/'>Users Managment</Link>
-      </div>
-      <div>
-        <GroupsIcon />
-        <Link to='/'>Group Managment</Link>
-      </div>
-      <div>
-        <LocationOnIcon />
-        <Link to='/'>Spaces Managment</Link>
-      </div>
-      <div>
-        <DirectionsCarIcon />
-        <Link to='/'>Cars Managment</Link>
-      </div>
-      <div>
-        <AccessTimeIcon />
-        <Link to='/'>Time Managment</Link>
-      </div>
-      <div>
-        <AccountBoxIcon />
-        <Link to='/'>Visitor Managment</Link>
-      </div>
-      <div>
-        <EqualizerIcon />
-        <Link to='/'>Statistical Managment</Link>
-      </div>
-      <div>
-        <ManageAccountsIcon />
-        <Link to='/'>Admin Managment</Link>
-      </div>
+      <Link to='/' >
+        <div className='menuItem active'>
+          <HomeIcon />
+          <p>
+            Dashboard
+          </p>
+        </div>
+      </Link>
+      <Link to='/reservation'>
+      <div clas className='menuItem'>
+          <CalendarTodayIcon />
+          <p>
+            Reservation Managment
+          </p>
+        </div>
+      </Link>
+      <Link to='/users'>
+        <div className='menuItem'>
+          <PersonIcon />
+          <p>
+            Users Managment
+          </p>
+        </div>
+      </Link>
+      <Link to='/group'>
+        <div className='menuItem'>
+          <GroupsIcon />
+          <p>
+            Group Managment
+          </p>
+        </div>
+      </Link>
+      <Link to='/space'>
+        <div className='menuItem'>
+          <LocationOnIcon />
+          <p>
+            Spaces Managment
+          </p>
+        </div>
+      </Link>
+      <Link to='/car'>
+        <div className='menuItem'>
+          <DirectionsCarIcon />
+          <p>
+            Cars Managment
+          </p>
+        </div>
+      </Link>
+      <Link to='/time'>
+        <div className='menuItem'>
+          <AccessTimeIcon />
+          <p>
+            Time Managment
+          </p>
+        </div>
+      </Link>
+      <Link to='/visitor'>
+        <div className='menuItem'>
+          <AccountBoxIcon />
+          <p>
+            Visitor Managment
+          </p>
+        </div>
+      </Link>
+      <Link to='/statistical'>
+        <div className='menuItem'>
+          <EqualizerIcon />
+          <p>
+            Statistical Managment
+          </p>
+        </div>
+      </Link>
+      <Link to='/adminPass'>
+        <div className='menuItem'>
+          <ManageAccountsIcon />
+          <p>
+            Admin Managment
+          </p>
+        </div>
+      </Link>
       <hr />
-      <div>
-        <AccountCircleIcon />
-        <Link to='/'>Profile</Link>
-      </div>
-      <div>
-        <NotificationsIcon />
-        <Link to='/'>Notification</Link>
-      </div>
-      <div>
-        <SettingsIcon />
-        <Link to='/'>Setting</Link>
-      </div>
-      <div>
-        <HelpIcon />
-        <Link to='/'>Faq</Link>
-      </div>
-      <div>
-        <LogoutIcon />
-        <Link to='/'>Logout</Link>
-      </div>
+      <Link to='/'>
+        <div className='menuItem'>
+          <AccountCircleIcon />
+          <p>
+            Profile
+          </p>
+        </div>
+      </Link>
+      <Link to='/'>
+        <div className='menuItem'>
+          <NotificationsIcon />
+          <p>
+            Notification
+          </p>
+        </div>
+      </Link>
+      <Link to='/'>
+        <div className='menuItem'>
+          <SettingsIcon />
+          <p>
+            Setting
+          </p>
+        </div>
+      </Link>
+      <Link to='/'>
+        <div className='menuItem'>
+          <HelpIcon />
+          <p>
+            Faq
+          </p>
+        </div>
+      </Link>
+      <Link to='/'>
+        <div className='menuItem'>
+          <LogoutIcon />
+          <p>
+            Logout
+          </p>
+        </div>
+      </Link>
     </div>
   )
 }

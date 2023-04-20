@@ -1,0 +1,107 @@
+.addCars {
+	background: #fff;
+	width: 85%;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.addCars p {
+	margin: 100px 0 40px 100px;
+	font-size: 34px;
+	font-weight: bold;
+	color: #6b00c6;
+}
+.addCars .form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 75px auto;
+	width: 50%;
+}
+.addCars .form input {
+	background: #e6e6e6;
+	border: none;
+	width: 100%;
+	padding: 20px 0;
+}
+.addCars .form input::placeholder {
+	background: #e6e6e6;
+}
+.addCars .form input:focus-visible {
+	border: none;
+	outline: none;
+}
+.addCars .form select {
+	background: #e6e6e6;
+	border: none;
+	width: 100%;
+	padding: 19.5px 0;
+	color: #666;
+}
+.addCars .form select::placeholder {
+	background: #e6e6e6;
+}
+.addCars .form select:focus-visible {
+	border: none;
+	outline: none;
+}
+.addCars .form label {
+	background: #e6e6e6;
+	border: none;
+	padding: 20px 0;
+}
+.addCars .form label::placeholder {
+	background: #e6e6e6;
+}
+.addCars .form label:focus-visible {
+	border: none;
+	outline: none;
+}
+.addCars .form div {
+	width: 100%;
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+.addCars .form > div {
+	margin-bottom: 20px;
+}
+.addCars .form .button {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.addCars .form .button div {
+	width: 35%;
+	height: 75px;
+	margin: 50px 0 20vh 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.addCars .form .button div:nth-child(1) {
+	background: #6b00c6;
+}
+.addCars .form .button div:nth-child(2) {
+	background: #cd353b;
+}
+.addCars .form .button div p {
+	margin: 0;
+	color: #fff;
+	font-size: 24px;
+}
+.addCars .form div > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333;
+	background: #e6e6e6;
+	width: 50px;
+	height: 56px;
+}

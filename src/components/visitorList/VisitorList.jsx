@@ -6,9 +6,9 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import useCalendar from '../../store/Calendar'
 import { createEventId } from '../../store/Data'
 
-import './calendar.css';
+import './visitorList.css';
 
-const Calendar = () => {
+const VisitorList = () => {
 
   const { currentEvents, setCurrentEvents } = useCalendar()
 
@@ -38,7 +38,7 @@ const handleEventClick = (clickInfo) => {
 }
 
 return (
-  <div className="calendar">
+  <div className="visitorList">
 
   <div>
     <FullCalendar
@@ -70,4 +70,4 @@ return (
   )
 }
 
-export default Calendar
+export default VisitorList

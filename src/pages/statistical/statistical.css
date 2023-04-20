@@ -1,0 +1,25 @@
+.statistical {
+	display: flex;
+	flex-direction: column;
+}
+.statistical .top,
+.statistical .bottom {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+.statistical .top div,
+.statistical .bottom div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+	margin: 25px 0;
+	height: 400px;
+	background: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}

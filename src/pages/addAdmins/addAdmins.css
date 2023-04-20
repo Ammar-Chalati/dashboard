@@ -1,0 +1,154 @@
+.addAdmins {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: 30px auto;
+	background: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.addAdmins > p{
+	margin: 40px;
+	font-size: 38px;
+	font-weight: bold;
+	color: #6b00c6;
+}
+.addAdmins .information,
+.addAdmins .button {
+	margin: auto;
+	display: flex;
+	width: 50%;
+	justify-content: space-evenly;
+}
+.addAdmins .information input,
+.addAdmins .button a {
+	width: 45%;
+	height: 40px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	background: #e4e4e4;
+	border: none;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.addAdmins .button a {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.addAdmins .button a:nth-child(1) {
+	background: #6b00c6;
+}
+.addAdmins .button a:nth-child(2) {
+	background: #cd353b;
+}
+.addAdmins .information input:focus-visible {
+	outline: none;
+}
+.addAdmins .permissions {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.addAdmins .permissions div {
+	overflow: hidden;
+	width: 40%;
+	margin-bottom: 30px;
+	height: 200px;
+	background: #e4e4e4;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+.addAdmins .permissions div .top {
+	border-bottom: 1px solid #fff;
+	width: 100%;
+	height: 40%;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0;
+}
+.addAdmins .permissions div .top p {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.addAdmins .permissions div .btn {
+	width: 80px;
+	height: 40px;
+	border-radius: 10;
+	background: #fff;
+	margin: 0;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	-ms-border-radius: 10;
+	-o-border-radius: 10;
+	position: relative;
+	cursor: pointer;
+}
+.addAdmins .permissions div .btn .turn{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	margin: 1px;
+}
+.addAdmins .permissions div .btn.on .turn{
+	background: #34e545;
+	position: absolute;
+	right: 1px;
+}
+.addAdmins .permissions div .btn.off .turn{
+	background: #cd353b;
+	position: absolute;
+	left: 1px;
+}
+.addAdmins .permissions div .bottom{
+	width: 100%;
+	height: calc(60% - 1px);
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+}
+.addAdmins .permissions div .bottom .read,
+.addAdmins .permissions div .bottom .write {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	height: 100%;
+	margin: 5px;
+}
+hr {
+	width: 100%;
+	margin: 30px 0;
+	color: #e4e4e4;
+	opacity: 0.5;
+}

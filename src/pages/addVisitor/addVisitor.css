@@ -1,0 +1,73 @@
+.AddVisitor {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 30px auto;
+	background: #fff;
+	height: 100vh;
+}
+.AddVisitor > h3 {
+	margin: 50px;
+	font-weight: bold;
+	color: #6b00c6;
+	font-size: 24px;
+}
+.AddVisitor .date {
+	display: flex;
+	justify-content: space-evenly;
+}
+.AddVisitor .date .from,
+.AddVisitor .date .to {
+	width: 40%;
+	height: 200px;
+	background: #e4e4e4;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	margin-bottom: 50px;
+}
+.AddVisitor .date .from p,
+.AddVisitor .date .to p {
+	margin: 20px;
+	font-size: 20px;
+}
+.AddVisitor .date .from .oclock,
+.AddVisitor .date .to .oclock {
+	margin: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+.AddVisitor .date .from .oclock div,
+.AddVisitor .date .to .oclock div {
+	display: flex;
+	flex-direction: column;
+	color: #999;
+}
+.AddVisitor .date .from .oclock div input,
+.AddVisitor .date .to .oclock div input{
+	margin: 2px;
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.AddVisitor .searchVisitor {
+	background: #6b00c6;
+	color: #fff;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}

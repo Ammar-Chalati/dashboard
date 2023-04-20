@@ -1,0 +1,107 @@
+.updateGroups {
+  background: #fff;
+  width: 85%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.updateGroups p {
+  margin: 100px 0 40px 100px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #6b00c6;
+}
+.updateGroups .form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 75px auto;
+  width: 50%;
+}
+.updateGroups .form input {
+  background: #e6e6e6;
+  border: none;
+  width: 100%;
+  padding: 20px 0;
+}
+.updateGroups .form input::placeholder {
+  background: #e6e6e6;
+}
+.updateGroups .form input:focus-visible {
+  border: none;
+  outline: none;
+}
+.updateGroups .form select {
+  background: #e6e6e6;
+  border: none;
+  width: 100%;
+  padding: 19.5px 0;
+  color: #666;
+}
+.updateGroups .form select::placeholder {
+  background: #e6e6e6;
+}
+.updateGroups .form select:focus-visible {
+  border: none;
+  outline: none;
+}
+.updateGroups .form label {
+  background: #e6e6e6;
+  border: none;
+  padding: 20px 0;
+}
+.updateGroups .form label::placeholder {
+  background: #e6e6e6;
+}
+.updateGroups .form label:focus-visible {
+  border: none;
+  outline: none;
+}
+.updateGroups .form div {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.updateGroups .form > div {
+  margin-bottom: 20px;
+}
+.updateGroups .form .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.updateGroups .form .button div {
+  width: 35%;
+  height: 75px;
+  margin: 50px 0 20vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.updateGroups .form .button div:nth-child(1) {
+  background: #6b00c6;
+}
+.updateGroups .form .button div:nth-child(2) {
+  background: #cd353b;
+}
+.updateGroups .form .button div p {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+}
+.updateGroups .form div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  background: #e6e6e6;
+  width: 50px;
+  height: 56px;
+}

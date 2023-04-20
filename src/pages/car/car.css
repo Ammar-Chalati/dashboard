@@ -1,0 +1,45 @@
+.car {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	min-height: 90vh;
+}
+.car .info {
+	display: flex;
+	justify-content: flex-start;
+	flex: 1 1;
+}
+.car .info .addCar,
+.car .info .addType,
+.car .info .count {
+	margin: 15px;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #6b00c6;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	letter-spacing: 1px;
+}
+.car .info .addCar,
+.car .info .addType {
+	color: #6b00c6;
+	background-color: #fff;
+	border: 3px solid #6b00c6;
+}
+.car .infoList {
+	flex: 5 5;
+	display: flex;
+	justify-content: space-between;
+}
+.car .infoList .carList {
+	flex: 5;
+}

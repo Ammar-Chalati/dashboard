@@ -1,0 +1,73 @@
+.admin {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	min-height: 90vh;
+}
+.admin .info {
+	display: flex;
+	justify-content: flex-start;
+	flex: 1 1;
+}
+.admin .info .addAdmin,
+.admin .info .count {
+	margin: 15px;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #6b00c6;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	letter-spacing: 1px;
+}
+.admin .info .addAdmin {
+	color: #6b00c6;
+	background-color: #fff;
+	border: 3px solid #6b00c6;
+}
+.admin .infoList {
+	flex: 5 5;
+	display: flex;
+	justify-content: space-between;
+}
+.admin .infoList .adminList {
+	flex: 5;
+}
+.admin .infoList .chartReservation {
+	overflow: hidden;
+	display: flex;
+	flex: 2;
+	margin: 15px;
+	height: 365px;
+	background: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.admin .infoList .chartReservation .title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #6b00c6;
+	color: #fff;
+	width: 100%;
+}
+.admin .infoList .chartReservation .title p {
+	padding: 20px;
+	letter-spacing: 1px;
+	font-size: 24px;
+	font-weight: bold;
+}
