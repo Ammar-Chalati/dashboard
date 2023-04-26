@@ -43,3 +43,33 @@
 .car .infoList .carList {
 	flex: 5;
 }
+.car .infoList .chartReservation {
+	overflow: hidden;
+	display: flex;
+	flex: 2;
+	margin: 15px;
+	height: 365px;
+	background: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.car .infoList .chartReservation .title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #6b00c6;
+	color: #fff;
+	width: 100%;
+}
+.car .infoList .chartReservation .title p {
+	padding: 20px;
+	letter-spacing: 1px;
+	font-size: 24px;
+	font-weight: bold;
+}
