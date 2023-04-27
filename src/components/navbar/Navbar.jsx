@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
       </Link>
       <Link to='/reservation'>
-      <div clas className='menuItem'>
+      <div className='menuItem'>
           <CalendarTodayIcon />
           <p>
             Reservation Managment
