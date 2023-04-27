@@ -1,0 +1,237 @@
+.calendar {
+	position: relative;
+	height: 100%;
+	background: #fff;
+	margin: 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	padding: 25px;
+}
+.calendar .fc-v-event {
+	background-color: #6b00c6;
+	border: 1px solid #6b00c6;
+}
+.calendar .fc .fc-button-primary {
+	background-color: #6b00c6;
+	border-color: #6b00c6;
+}
+.calendar .fc .fc-button-primary:disabled {
+	background-color: #6b00c6;
+	border-color: #6b00c6;
+}
+.calendar .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+	background-color: #4a008b;
+	border-color: #4a008b;
+}
+.calendar .fc .fc-button-primary:hover {
+	background-color: #4a008b;
+	border-color: #4a008b;
+}
+.calendar .fc-view-harness.fc-view-harness-active {
+	height: 601px !important;
+}
+.calendar .fc-daygrid-event-dot {
+	border: calc(var(--fc-daygrid-event-dot-width)/2) solid #6b00c6;
+}
+.calendar .sureDel,
+.calendar .sureUpdate,
+.calendar .sureAdd {
+	width: 40vw;
+	height: 30vh;
+	background-color: #fff;
+	position: fixed;
+	top: 30vh;
+	left: 35vw;
+	z-index: 1000;
+	border: 2px solid #333;
+	box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 25%;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	display: none;
+}
+.calendar .sureDel p,
+.calendar .sureAdd p {
+	font-size: 24px;
+	color: #333;
+}
+.calendar .sureDel .buttons,
+.calendar .sureAdd .buttons {
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.calendar .sureDel .buttons div,
+.calendar .sureAdd .buttons div{
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.calendar .sureUpdate {
+	gap: 5%;
+	min-height: 65vh;
+	top: 20vh;
+}
+.calendar .sureUpdate h3{
+	font-size: 24px;
+	color: #333;
+}
+.calendar .sureUpdate .timingSpacingSchedule {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.calendar .sureUpdate .timingSpacingSchedule.new {
+	display: none;
+}
+.calendar .sureUpdate .timingSpacingSchedule .timingSchedule {
+	display: flex;
+	width: 500px;
+	justify-content: space-between;
+}
+.calendar .sureUpdate .timingSpacingSchedule .timingSchedule p {
+	color: #333;
+}
+.calendar .sureUpdate .timingSpacingSchedule .SpacingSchedule{
+	display: flex;
+	width: 500px;
+	height: 50px;
+	align-items: center;
+	border: 1px solid #333;
+	border-left: none;
+}
+.calendar .sureUpdate .timingSpacingSchedule .SpacingSchedule p{
+	font-size: 24px;
+	width: 20%;
+	border-left: 1px solid #333;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.calendar .sureUpdate .owner,
+.calendar .sureUpdate .type {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.calendar .sureUpdate .owner p,
+.calendar .sureUpdate .type p {
+	font-size: 22px;
+	color: #333;
+	margin-right: 5px;
+}
+.calendar .sureUpdate .cancelation {
+	width: 100%;
+}
+.calendar .sureUpdate .cancelation div{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.calendar .sureUpdate .cancelation div p {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-right: 10px;
+}
+.calendar .sureUpdate .cancelation .btn {
+	width: 80px;
+	height: 40px;
+	background: #e1e1e1;
+	border-radius: 20px/20px ;
+	-webkit-border-radius: 20px/20px ;
+	-moz-border-radius: 20px/20px ;
+	-ms-border-radius: 20px/20px ;
+	-o-border-radius: 20px/20px ;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+.visitorList .sureUpdate .cancelation .btn .turn{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	margin: 1px;
+}
+.calendar .sureUpdate .cancelation .btn.on .turn{
+	background: #34e545;
+	position: absolute;
+	right: 1px;
+}
+.calendar .sureUpdate .cancelation .btn.off .turn{
+	background: #cd353b;
+	position: absolute;
+	left: 1px;
+}
+.calendar .sureUpdate .buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.calendar .sureUpdate .buttons div {
+	width: 100px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	cursor: pointer;
+}
+.calendar .sureUpdate .buttons div:nth-child(1) ,
+.calendar .sureUpdate .buttons div:nth-child(3) {
+	background: rgb(205, 53, 59);
+}
+.calendar .sureUpdate .buttons div:nth-child(2) {
+	background: #34e545;
+}
+.calendar .sureAdd{
+	gap: 15%;
+}
+.calendar .sureAdd input{
+	width: 90%;
+	height: 30px;
+	background: #e1e1e1;
+	border: none;
+	padding-left: 15px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.calendar .sureAdd input:focus-visible{
+	outline: none;
+}
